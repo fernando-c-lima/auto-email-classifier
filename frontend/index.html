@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Classifier</title>
+  <link rel="icon" type="image/svg+xml" href="assets/mailbox.svg">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos customizados -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+  <header class="app-header d-flex align-items-center">
+    <i class="ph-fill ph-mailbox header-icon"></i>
+    <h1 class="ms-2">Email Classifier</h1>
+  </header>
+
+  <main class="container my-5">
+    <!-- Upload -->
+    <section class="upload-section card p-4">
+      <form id="emailForm">
+        <div class="mb-3">
+          <label for="emailText" class="form-label">Cole o texto do email:</label>
+          <textarea id="emailText" class="form-control" rows="6" placeholder="Digite ou cole aqui o conteúdo do email..."></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="emailFile" class="form-label">Ou faça upload (.txt ou .pdf):</label>
+          <input type="file" id="emailFile" class="form-control" accept=".txt,.pdf">
+        </div>
+
+        <button type="submit" class="btn w-100">Processar</button>
+      </form>
+    </section>
+
+    <!-- Resultado -->
+    <section class="result-section card p-4 mt-4 d-none" id="resultSection" aria-live="polite">
+      <h2>Resultado</h2>
+      <p><strong>Categoria:</strong> <span id="category"></span></p>
+      <p><strong>Resposta sugerida:</strong></p>
+      <div id="suggestedReply" class="reply-box p-3 rounded"></div>
+      <button id="copyBtn" class="btn mt-3">Copiar resposta</button>
+    </section>
+  </main>
+
+  <footer class="app-footer text-center py-3">
+    <p>Desafio Técnico - AutoU 🚀</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
