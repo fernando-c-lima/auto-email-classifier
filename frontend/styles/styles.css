@@ -1,0 +1,158 @@
+/* ============================
+   Layout geral
+============================ */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa; /* cinza bem claro */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================
+   Header
+============================ */
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: #1e3a8a; /* azul escuro corporativo */
+  border-bottom: 3px solid #2563eb; /* azul destaque */
+}
+
+.app-header h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.header-icon {
+  font-size: 2rem;
+  color: #60a5fa; /* azul claro */
+}
+
+/* ============================
+   Cards (Upload & Resultado)
+============================ */
+section {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* ============================
+   Formulário
+============================ */
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #f9fafb;
+  color: #111;
+  transition: border 0.3s ease;
+}
+
+textarea:focus,
+input[type="file"]:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 4px #60a5fa;
+}
+
+/* ============================
+   Botões
+============================ */
+button,
+.btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background: #1d4ed8;
+}
+
+#copyBtn {
+  background: transparent;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+#copyBtn:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* ============================
+   Resposta sugerida
+============================ */
+.reply-box {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* ============================
+   Rodapé
+============================ */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* ============================
+   Spinner de carregamento
+============================ */
+#loadingSpinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#loadingSpinner p {
+  margin: 0;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+.animated-alert {
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50px);
+  z-index: 1050;
+  min-width: 300px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.animated-alert.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.animated-alert.hide {
+  transform: translateX(-50%) translateY(50px);
+  opacity: 0;
+}
