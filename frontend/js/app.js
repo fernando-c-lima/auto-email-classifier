@@ -1,3 +1,22 @@
+const fileInput = document.getElementById("emailFile");
+const clearFileBtn = document.getElementById("clearFileBtn");
+
+// Mostra o ✖ quando tiver arquivo
+fileInput.addEventListener("change", () => {
+  if (fileInput.value) {
+    clearFileBtn.classList.remove("d-none");
+  } else {
+    clearFileBtn.classList.add("d-none");
+  }
+});
+
+// Ao clicar no ✖, limpa
+clearFileBtn.addEventListener("click", () => {
+  fileInput.value = "";
+  clearFileBtn.classList.add("d-none");
+});
+
+
 // Função auxiliar para criar alertas temporários
 function showAlert(message, type = "success") {
   const alertPlaceholder = document.createElement("div");
