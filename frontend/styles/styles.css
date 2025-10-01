@@ -156,3 +156,19 @@ footer {
   transform: translateX(-50%) translateY(50px);
   opacity: 0;
 }
+
+.clear-file-btn {
+  position: absolute;
+  right: 40px;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.clear-file-btn:hover {
+  color: #dc3545; /* vermelho no hover */
+}
