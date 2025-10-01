@@ -28,7 +28,8 @@ Aplicação **full stack** que utiliza **FastAPI** no backend e uma interface we
 ### 1. Clone o repositório
 ```bash
 git clone https://github.com/fernando-c-lima/auto-email-classifier.git
-cd backend/app
+cd backend/
+cd app/
 ```
 
 ### 2.Instale as dependências
