@@ -46,6 +46,8 @@ OPENAI_API_KEY=sk-xxxxxxx
 ### 4. Rode o servidor FastAPI
 
 ```bash
+cd backend/
+cd app/
 uvicorn main:app --reload
 ```
 
