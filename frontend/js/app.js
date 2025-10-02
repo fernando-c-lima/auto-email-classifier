@@ -85,9 +85,6 @@ document.getElementById("emailForm").addEventListener("submit", async (e) => {
     if (text) formData.append("text", text);
     if (file) formData.append("file", file);
 
-
-    const API_URL = process.env.REACT_APP_API_URL; // pega da variável de ambiente
-
     const response = await fetch(API_URL, {
       method: "POST",
       body: formData
