@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
-from utils import classify_email, extract_text_from_pdf
+from .utils import classify_email, extract_text_from_pdf
 import io
 
 app = FastAPI()
