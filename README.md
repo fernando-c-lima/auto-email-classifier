@@ -67,6 +67,37 @@ http://localhost:8000
 
 #### 4. Clique em Processar e veja a classificação + resposta sugerida
 
+# Exemplos para Testes
+
+Na pasta `docs/` há dois arquivos de exemplo:  
+- `teste.txt` → teste para **improdutivo**  
+- `text-2.pdf` → teste para **produtivo**
+
+#### Exemplo em texto
+
+**Produtivo**
+```text
+Assunto: Confirmação de reunião
+Corpo:
+Bom dia,
+
+Podemos confirmar a reunião de alinhamento para sexta-feira às 15h? Preciso ajustar a agenda dos envolvidos.
+
+Obrigado,
+Marcelo Dias
+```
+
+**Improdutivo**
+```text
+Assunto: Boas festas!
+Corpo:
+Oi, pessoal,
+
+Desejo a todos um feliz Natal e um próspero Ano Novo! Que 2026 seja incrível para todos nós!
+
+Abraços,
+Luciana Ferreira
+```
 
 
 
