@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Configure sua chave da OpenAI
-Crie um arquivo .env dentro da pasta backend/:
+Crie um arquivo .env na raiz do projeto:
 ```bash
 OPENAI_API_KEY=sk-xxxxxxx
 ```
